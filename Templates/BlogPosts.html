@@ -1,0 +1,12 @@
+<div class="ms-Table">
+  <div class="ms-Table-row">
+    <span class="ms-Table-cell">Title</span>
+    <span class="ms-Table-cell">Link</span>
+    <span class="ms-Table-cell">Published Date</span>
+  </div>
+  <div class="ms-Table-row" ng-repeat="blogPost in BlogPosts">
+    <span class="ms-Table-cell">{{ blogPost.title }}</span>
+    <span class="ms-Table-cell"><a ng-href="{{ blogPost.link }}">{{ blogPost.link }}</a></span>
+    <span class="ms-Table-cell">{{ blogPost.publishedDate }}</span>
+  </div>
+</div>
